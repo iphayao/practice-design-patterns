@@ -9,7 +9,7 @@ namespace SimpleFactory
     /// <summary>
     /// Interface of door
     /// </summary>
-    interface IDoor
+    public interface IDoor
     {
         float getWidth();
         float getHeight();
@@ -18,7 +18,7 @@ namespace SimpleFactory
     /// <summary>
     /// Implementation class of door interface
     /// </summary>
-    class WoodenDoor : IDoor
+    public class WoodenDoor : IDoor
     {
         protected float width;
         protected float height;
@@ -56,7 +56,7 @@ namespace SimpleFactory
     /// <summary>
     /// Door factory class
     /// </summary>
-    class DoorFacory
+    public class DoorFacory
     {
         /// <summary>
         /// Factory method that return implementation of door interface
