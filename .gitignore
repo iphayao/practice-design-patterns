@@ -5,3 +5,5 @@
 /simple-factory/csharp/SimpleFactory/bin/Debug
 /simple-factory/csharp/SimpleFactory/obj/Debug
 /simple-factory/csharp/SimpleFactoryUnitTest/obj/Debug
+/factory-method/csharp/FactoryMethod/obj
+/factory-method/csharp/FactoryMethod/bin/Debug/netcoreapp1.1
