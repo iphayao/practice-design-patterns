@@ -5,9 +5,9 @@ namespace FactoryMethod
     /// <summary>
     /// Interface for Interviewer
     /// </summary>
-    interface IInterviewer
+    public interface IInterviewer
     {
-        void askQuestions();
+        string askQuestions();
     }
 
 
@@ -16,9 +16,9 @@ namespace FactoryMethod
     /// </summary>
     class Developer : IInterviewer
     {
-        public void askQuestions()
+        public string askQuestions()
         {
-            Console.WriteLine("Asking about design pattern!");
+            return "Asking about design pattern!";
         }
     }
 
@@ -27,30 +27,30 @@ namespace FactoryMethod
     /// </summary>
     class CommunityExecutive : IInterviewer
     {
-        public void askQuestions()
+        public string askQuestions()
         {
-            Console.WriteLine("Asking about community building!");
+            return "Asking about community building!";
         }
     }
 
     /// <summary>
     /// Abstract class for Hiring Manager
     /// </summary>
-    abstract class HiringManager
+    public abstract class HiringManager
     {
         abstract public IInterviewer makeInterviewer();
 
-        public void takeInterview()
+        public string takeInterview()
         {
             IInterviewer interviewer = this.makeInterviewer();
-            interviewer.askQuestions();
+            return interviewer.askQuestions();
         }
     }
 
     /// <summary>
     /// Implement Development manager for ask about develper question
     /// </summary>
-    class DevelopmentManager : HiringManager
+    public class DevelopmentManager : HiringManager
     {
         public override IInterviewer makeInterviewer()
         {
@@ -61,7 +61,7 @@ namespace FactoryMethod
     /// <summary>
     /// Implement Maketing manager for ask about community question
     /// </summary>
-    class MaketingManager : HiringManager
+    public class MaketingManager : HiringManager
     {
         public override IInterviewer makeInterviewer()
         {
@@ -83,11 +83,11 @@ namespace FactoryMethod
         {
             // Create development manager for take interview with developer question
             DevelopmentManager devManager = new DevelopmentManager();
-            devManager.takeInterview();
+            Console.WriteLine(devManager.takeInterview());
 
             // Create maketing manager for take interview with community question
             MaketingManager markManager = new MaketingManager();
-            markManager.takeInterview();
+            Console.WriteLine(markManager.takeInterview());
         }
     }
 }
