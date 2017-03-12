@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\abstract-factory",
+    "\\builder",
+    "\\builder\\csharp",
+    "\\simple-factory",
+    "\\simple-factory\\csharp"
   ],
+  "SelectedNode": "\\builder\\csharp\\Builder.sln",
   "PreviewInSolutionExplorer": false
 }

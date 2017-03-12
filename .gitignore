@@ -15,3 +15,7 @@
 /abstract-factory/csharp/AbstractFactory/obj
 /abstract-factory/csharp/AbstractFactoryUnitTest/bin/Debug/netcoreapp1.1
 /abstract-factory/csharp/AbstractFactoryUnitTest/obj
+/builder/csharp/Builder/bin/Debug/netcoreapp1.1
+/builder/csharp/Builder/obj
+/builder/csharp/BuilderUnitTest/bin/Debug/netcoreapp1.1
+/builder/csharp/BuilderUnitTest/obj
