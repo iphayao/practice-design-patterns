@@ -10,3 +10,8 @@
 /factory-method/csharp/FactoryMethodUnitTest/obj/Debug
 /factory-method/csharp/FactoryMethodUnitTest/bin/Debug/netcoreapp1.1
 /factory-method/csharp/FactoryMethodUnitTest/obj
+/simple-factory/csharp
+/abstract-factory/csharp/AbstractFactory/bin/Debug/netcoreapp1.1
+/abstract-factory/csharp/AbstractFactory/obj
+/abstract-factory/csharp/AbstractFactoryUnitTest/bin/Debug/netcoreapp1.1
+/abstract-factory/csharp/AbstractFactoryUnitTest/obj
